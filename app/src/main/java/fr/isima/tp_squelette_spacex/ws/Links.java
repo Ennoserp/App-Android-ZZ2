@@ -1,6 +1,8 @@
 package fr.isima.tp_squelette_spacex.ws;
 
-public class Links {
+import java.io.Serializable;
+
+public class Links implements Serializable {
 
     public String article_link;
 }

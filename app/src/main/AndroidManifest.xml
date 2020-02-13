@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="fr.isima.tp_squelette_spacex">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activity.LaunchActivity"></activity>
+        <activity android:name=".activity.LaunchesActivity"></activity>
+        <activity android:name=".activity.RocketsActivity"></activity>
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />

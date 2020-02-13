@@ -9,4 +9,7 @@ public interface SpaceXService {
 
     @GET("launches")
     Call<List<Launch>> listLaunches();
+
+    @GET("rockets")
+    Call<List<Rocket>> listRockets();
 }

@@ -20,10 +20,10 @@ import retrofit2.Call;
 
 public class LaunchAdapter extends ArrayAdapter<Launch> {
 
-    LayoutInflater inflater;
-    int layoutId;
+    private LayoutInflater inflater;
+    private int layoutId;
 
-    LaunchAdapter(Activity activity, int layoutResourceId, Call<List<Launch>> objects){
+    public LaunchAdapter(Activity activity, int layoutResourceId, List<Launch> objects){
         super(activity, layoutResourceId, (List<Launch>) objects);
         inflater = activity.getLayoutInflater();
         layoutId = layoutResourceId;
@@ -37,15 +37,16 @@ public class LaunchAdapter extends ArrayAdapter<Launch> {
            view = inflater.inflate(layoutId, parent, false);
         }
 
-        TextView tv1 = view.findViewById(R.id.launchLayout1);
-        TextView tv2 = view.findViewById(R.id.launchLayout2);
-        TextView tv3 = view.findViewById(R.id.launchLayout3);
+        TextView missionName = view.findViewById(R.id.launchLayout1);
+        TextView rocketName = view.findViewById(R.id.launchLayout2);
+        TextView launchDate = view.findViewById(R.id.launchLayout3);
 
         Launch launch = getItem(position);
 
-        tv1.setText(launch.mission);
-        tv2.setText(launch.rocket.rocket_name);
-        tv3.setText(launch.launch_date_unix);
+
+        missionName.setText(launch.mission_name);
+        rocketName.setText(launch.rocket.rocket_name);
+        launchDate.setText(""+launch.launch_date_unix);
 
         return view;
     }

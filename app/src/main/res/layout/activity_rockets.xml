@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
 
     <androidx.core.widget.ContentLoadingProgressBar
-        android:id="@+id/progression"
+        android:id="@+id/progressBarRockets"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,31 +13,11 @@
 
 
     <view class="androidx.appcompat.app.AlertController$RecycleListView"
-        android:id="@+id/list_launches"
+        android:id="@+id/listRockets"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     </view>
 
-    <TextView
-        android:id="@+id/launchLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="200px">
-    </TextView>
-
-    <TextView
-        android:id="@+id/launchLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="200px">
-    </TextView>
-
-    <TextView
-        android:id="@+id/launchLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="200px">
-    </TextView>
-
-
-    <!-- il faut créer les layouts-->
 
 </LinearLayout>

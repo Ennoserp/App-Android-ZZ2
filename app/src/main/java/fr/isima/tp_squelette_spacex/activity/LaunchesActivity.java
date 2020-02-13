@@ -25,22 +25,31 @@ import retrofit2.Response;
 
 public class LaunchesActivity extends Activity implements AdapterView.OnItemClickListener, Callback<List<Launch>> {
 
-    private ProgressBar barreP = findViewById(R.id.progression);
-    private ListView liste = findViewById(R.id.list_launches);
+    private ProgressBar barreP;
+    private ListView liste;
     private Launch launch;
+    LaunchAdapter adapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launches);
 
+        liste = findViewById(R.id.list_launches);
+        barreP = findViewById(R.id.progression);
+
         liste.setOnItemClickListener(this);
+
+        loadLaunches();
 
     }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        launch = ((Launch) parent.getAdapter());
+
+        //launch = ((Launch) parent.getAdapter());
+        launch = adapter.getItem(position);
+
         if (launch.links.article_link==null){
             Toast t = Toast.makeText(view.getContext(), "aucun d'article trouvé",Toast.LENGTH_SHORT);
             t.setGravity(Gravity.CENTER_VERTICAL,0,0);
@@ -70,7 +79,8 @@ public class LaunchesActivity extends Activity implements AdapterView.OnItemClic
     @Override
     public void onResponse(Call<List<Launch>> call, Response<List<Launch>> response) {
         barreP.setVisibility(View.INVISIBLE);
-        
+        adapter = new LaunchAdapter(this, R.layout.launches_view, response.body());
+        liste.setAdapter(adapter);
     }
 
     @Override
