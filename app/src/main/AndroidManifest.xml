@@ -11,9 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.LaunchActivity"></activity>
-        <activity android:name=".activity.LaunchesActivity"></activity>
-        <activity android:name=".activity.RocketsActivity"></activity>
+        <activity android:name=".activity.LaunchActivity">
+            <intent-filter android:label="@string/app_name">
+                <!--je sais pas trop à quoi ça sert... mais ça enlève les warnings-->
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LaunchesActivity"/>
+        <activity android:name=".activity.RocketsActivity"/>
+        <activity android:name=".activity.RocketActivity"/>
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />

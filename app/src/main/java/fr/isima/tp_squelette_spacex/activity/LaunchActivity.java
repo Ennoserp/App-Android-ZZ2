@@ -9,8 +9,6 @@ import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import java.io.Serializable;
-
 public class LaunchActivity extends Activity {
 
     @Override
@@ -19,7 +17,7 @@ public class LaunchActivity extends Activity {
         setContentView(R.layout.activity_launch);
 
         Intent intent = getIntent();
-        Launch launch = (Launch) intent.getSerializableExtra("url");
+        Launch launch = (Launch) intent.getSerializableExtra("lch");
 
         WebView launchWebView = findViewById(R.id.webViewLaunch);
         launchWebView.setWebViewClient(new WebViewClient());

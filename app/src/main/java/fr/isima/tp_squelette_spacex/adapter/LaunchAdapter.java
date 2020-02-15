@@ -7,16 +7,14 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import fr.isima.tp_squelette_spacex.R;
-import fr.isima.tp_squelette_spacex.activity.LaunchesActivity;
 import fr.isima.tp_squelette_spacex.ws.Launch;
-import retrofit2.Call;
 
 public class LaunchAdapter extends ArrayAdapter<Launch> {
 
@@ -24,7 +22,7 @@ public class LaunchAdapter extends ArrayAdapter<Launch> {
     private int layoutId;
 
     public LaunchAdapter(Activity activity, int layoutResourceId, List<Launch> objects){
-        super(activity, layoutResourceId, (List<Launch>) objects);
+        super(activity, layoutResourceId, objects);
         inflater = activity.getLayoutInflater();
         layoutId = layoutResourceId;
     }
@@ -32,21 +30,29 @@ public class LaunchAdapter extends ArrayAdapter<Launch> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+
         View view = convertView;
+
         if(convertView == null){
            view = inflater.inflate(layoutId, parent, false);
         }
 
-        TextView missionName = view.findViewById(R.id.launchLayout1);
-        TextView rocketName = view.findViewById(R.id.launchLayout2);
-        TextView launchDate = view.findViewById(R.id.launchLayout3);
+        TextView missionName = view.findViewById(R.id.mission_name);
+        TextView rocketName = view.findViewById(R.id.mission_rocket_name);
+        TextView launchDate = view.findViewById(R.id.mission_date_launch);
 
         Launch launch = getItem(position);
 
+        //conversion unixTime en date:
+        Date date = new java.util.Date(launch.launch_date_unix*1000L);
+        SimpleDateFormat sdf = new java.text.SimpleDateFormat("dd MMMM yyyy HH:mm");
+        sdf.setTimeZone(java.util.TimeZone.getTimeZone("GMT+1"));
+        String formattedDate = sdf.format(date);
 
+        //on set les affichages
         missionName.setText(launch.mission_name);
         rocketName.setText(launch.rocket.rocket_name);
-        launchDate.setText(""+launch.launch_date_unix);
+        launchDate.setText(formattedDate);
 
         return view;
     }

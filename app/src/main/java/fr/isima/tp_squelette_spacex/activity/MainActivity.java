@@ -7,7 +7,6 @@ import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import fr.isima.tp_squelette_spacex.R;
-import fr.isima.tp_squelette_spacex.ws.Launch;
 
 public class MainActivity extends Activity {
 
@@ -19,7 +18,6 @@ public class MainActivity extends Activity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        //return super.onCreateOptionsMenu(menu);
         getMenuInflater().inflate(R.menu.menu_nav, menu);
         return true;
     }
@@ -34,7 +32,6 @@ public class MainActivity extends Activity {
                 startActivity(new Intent(this,RocketsActivity.class));
                 break;
         }
-        //return super.onOptionsItemSelected(item);
         return true;
     }
 

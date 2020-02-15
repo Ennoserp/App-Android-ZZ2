@@ -4,30 +4,32 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/launchLayout1"
+        android:id="@+id/mission_name"
         android:layout_width="match_parent"
-        android:layout_height="60px"
+        android:layout_height="70px"
         android:textStyle="bold"
-        android:textSize="28dp"
-        android:layout_marginBottom="10px"
-        android:layout_marginLeft="100px">
+        android:textSize="20dp"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px">
     </TextView>
 
     <TextView
-        android:id="@+id/launchLayout2"
+        android:id="@+id/mission_rocket_name"
         android:layout_width="match_parent"
         android:layout_height="50px"
         android:textSize="16dp"
-        android:layout_marginLeft="100px">
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="10px">
 
     </TextView>
 
     <TextView
-        android:id="@+id/launchLayout3"
+        android:id="@+id/mission_date_launch"
         android:layout_width="match_parent"
         android:layout_height="50px"
         android:textSize="16dp"
-        android:layout_marginLeft="100px">
+        android:layout_marginLeft="20px"
+        android:layout_marginBottom="15px">
 
     </TextView>
 

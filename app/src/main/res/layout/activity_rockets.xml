@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.core.widget.ContentLoadingProgressBar
-        android:id="@+id/progressBarRockets"
+    <ProgressBar
+        android:id="@+id/progress_bar_rockets"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:indeterminate="true"
         android:indeterminateTint="#1a09d6"/>
 
-
-    <view class="androidx.appcompat.app.AlertController$RecycleListView"
-        android:id="@+id/listRockets"
+    <ListView
+        android:id="@+id/list_rockets"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </view>
+        android:layout_height="match_parent"/>
 
 
 </LinearLayout>

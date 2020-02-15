@@ -11,12 +11,8 @@ import java.util.List;
 
 import fr.isima.tp_squelette_spacex.ws.Rocket;
 
-
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// Supprimez la classe vide et décommentez la vraie classe et les imports lorsque vous en aurez besoin
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 public class RocketAdapter extends ArrayAdapter<Rocket> {
+
     private int layoutResourceId;
     LayoutInflater inflater;
 

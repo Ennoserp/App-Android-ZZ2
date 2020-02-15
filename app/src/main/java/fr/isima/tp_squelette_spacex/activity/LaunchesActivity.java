@@ -15,6 +15,8 @@ import android.widget.Toast;
 import java.util.List;
 
 import androidx.annotation.Nullable;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import fr.isima.tp_squelette_spacex.R;
 import fr.isima.tp_squelette_spacex.adapter.LaunchAdapter;
 import fr.isima.tp_squelette_spacex.ws.Launch;
@@ -25,39 +27,51 @@ import retrofit2.Response;
 
 public class LaunchesActivity extends Activity implements AdapterView.OnItemClickListener, Callback<List<Launch>> {
 
-    private ProgressBar barreP;
-    private ListView liste;
-    private Launch launch;
-    LaunchAdapter adapter;
+    private ProgressBar progBarLaunches;
+    private ListView listeViewLaunches;
+    private LaunchAdapter adapterLaunch;
+
+    SwipeRefreshLayout swipeRefreshLayout;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launches);
 
-        liste = findViewById(R.id.list_launches);
-        barreP = findViewById(R.id.progression);
+        progBarLaunches = findViewById(R.id.progress_bar_launches);
+        listeViewLaunches = findViewById(R.id.list_launches);
 
-        liste.setOnItemClickListener(this);
+        listeViewLaunches.setOnItemClickListener(this);
 
         loadLaunches();
+
+        //pour rafraichir les données...
+        swipeRefreshLayout = findViewById(R.id.swipe_refresh_layout);
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                loadLaunches();
+                swipeRefreshLayout.setRefreshing(false);
+            }
+
+        });
 
     }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-        //launch = ((Launch) parent.getAdapter());
-        launch = adapter.getItem(position);
+        Launch launch = adapterLaunch.getItem(position);
 
-        if (launch.links.article_link==null){
-            Toast t = Toast.makeText(view.getContext(), "aucun d'article trouvé",Toast.LENGTH_SHORT);
+        if (launch.links.article_link == null){
+
+            Toast t = Toast.makeText(view.getContext(), "Aucun article trouvé",Toast.LENGTH_SHORT);
             t.setGravity(Gravity.CENTER_VERTICAL,0,0);
             t.show();
         }
         else {
             if (launch.links.article_link.startsWith("https")){
-                Intent intentExplicite = new Intent(this, LaunchActivity.class).putExtra("url", launch);
+                Intent intentExplicite = new Intent(this, LaunchActivity.class).putExtra("lch", launch);
                 startActivity(intentExplicite);
             }
             else {
@@ -70,7 +84,7 @@ public class LaunchesActivity extends Activity implements AdapterView.OnItemClic
 
 
     public void loadLaunches(){
-        barreP.setVisibility(View.VISIBLE);
+        progBarLaunches.setVisibility(View.VISIBLE);
 
         WsManager.getSpaceXService().listLaunches().enqueue(this);
     }
@@ -78,14 +92,14 @@ public class LaunchesActivity extends Activity implements AdapterView.OnItemClic
 
     @Override
     public void onResponse(Call<List<Launch>> call, Response<List<Launch>> response) {
-        barreP.setVisibility(View.INVISIBLE);
-        adapter = new LaunchAdapter(this, R.layout.launches_view, response.body());
-        liste.setAdapter(adapter);
+        progBarLaunches.setVisibility(View.INVISIBLE);
+        adapterLaunch = new LaunchAdapter(this, R.layout.launches_view, response.body());
+        listeViewLaunches.setAdapter(adapterLaunch);
     }
 
     @Override
     public void onFailure(Call<List<Launch>> call, Throwable t) {
-        barreP.setVisibility(View.INVISIBLE);
+        progBarLaunches.setVisibility(View.INVISIBLE);
 
         Context context = getApplicationContext();
         CharSequence text = "ERREUR !";
