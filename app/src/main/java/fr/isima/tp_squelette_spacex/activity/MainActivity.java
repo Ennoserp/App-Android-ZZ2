@@ -31,6 +31,9 @@ public class MainActivity extends Activity {
             case R.id.navRockets:
                 startActivity(new Intent(this,RocketsActivity.class));
                 break;
+            case R.id.navAbout:
+                startActivity(new Intent(this,AboutActivity.class));
+                break;
         }
         return true;
     }

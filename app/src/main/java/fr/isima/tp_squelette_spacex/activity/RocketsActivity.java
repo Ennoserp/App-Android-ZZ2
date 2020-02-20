@@ -34,7 +34,7 @@ public class RocketsActivity extends Activity implements AdapterView.OnItemClick
         setContentView(R.layout.activity_rockets);
 
         progBarRockets = findViewById(R.id.progress_bar_rockets);
-        listViewRockets= findViewById(R.id.list_rockets);
+        listViewRockets = findViewById(R.id.list_rockets);
 
         listViewRockets.setOnItemClickListener(this);
 

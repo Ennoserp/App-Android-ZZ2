@@ -13,6 +13,7 @@ import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 import fr.isima.tp_squelette_spacex.R;
 import fr.isima.tp_squelette_spacex.ws.Launch;
 
@@ -50,8 +51,11 @@ public class LaunchAdapter extends ArrayAdapter<Launch> {
         String formattedDate = sdf.format(date);
 
         //on set les affichages
+        missionName.setTextColor(ContextCompat.getColor(getContext(),R.color.colorPlatinum));
         missionName.setText(launch.mission_name);
+        rocketName.setTextColor(ContextCompat.getColor(getContext(),R.color.greyGoose));
         rocketName.setText(launch.rocket.rocket_name);
+        launchDate.setTextColor(ContextCompat.getColor(getContext(),R.color.greyGoose));
         launchDate.setText(formattedDate);
 
         return view;

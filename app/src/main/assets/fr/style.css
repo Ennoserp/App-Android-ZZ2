@@ -1,0 +1,15 @@
+body{
+
+    margin : 10px;
+    text-align : center;
+    overflow : hidden;
+}
+
+ul{
+  list-style-type: none;
+  font-size : 1.3em;
+}
+
+img{
+    width: 100%;
+}

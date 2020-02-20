@@ -3,5 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/view_pager_rockets"
     android:layout_width="match_parent"
+    android:background="#0C090A"
     android:layout_height="match_parent"/>
 

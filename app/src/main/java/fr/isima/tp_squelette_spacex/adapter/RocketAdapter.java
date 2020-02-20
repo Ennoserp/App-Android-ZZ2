@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import androidx.core.content.ContextCompat;
+import fr.isima.tp_squelette_spacex.R;
 import fr.isima.tp_squelette_spacex.ws.Rocket;
 
 public class RocketAdapter extends ArrayAdapter<Rocket> {
@@ -42,6 +44,7 @@ public class RocketAdapter extends ArrayAdapter<Rocket> {
 
         Rocket rocket = getItem(position);
         holder.rocketName.setText(rocket.rocket_name);
+        holder.rocketName.setTextColor(ContextCompat.getColor(getContext(),R.color.colorPlatinum));
 
         return view;
     }
