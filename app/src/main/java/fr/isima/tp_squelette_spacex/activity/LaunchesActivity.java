@@ -45,8 +45,8 @@ public class LaunchesActivity extends Activity implements AdapterView.OnItemClic
 
         loadLaunches();
 
-        //pour rafraichir les données...
-        swipeRefreshLayout = findViewById(R.id.swipe_refresh_layout);
+        //pour rafraichir les données
+        swipeRefreshLayout = findViewById(R.id.swipe_refresh_layout_launches);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {

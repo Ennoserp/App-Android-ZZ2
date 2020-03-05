@@ -14,6 +14,8 @@ import android.widget.Toast;
 import java.util.List;
 
 import androidx.annotation.Nullable;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import fr.isima.tp_squelette_spacex.R;
 import fr.isima.tp_squelette_spacex.adapter.RocketAdapter;
 import fr.isima.tp_squelette_spacex.ws.Rocket;
@@ -28,6 +30,8 @@ public class RocketsActivity extends Activity implements AdapterView.OnItemClick
     private ListView listViewRockets;
     private RocketAdapter adapterRocket;
 
+    SwipeRefreshLayout swipeRefreshLayout;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,10 +44,22 @@ public class RocketsActivity extends Activity implements AdapterView.OnItemClick
 
         loadRockets();
 
+        //pour rafraichir les données
+        swipeRefreshLayout = findViewById(R.id.swipe_refresh_layout_rockets);
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                loadRockets();
+                swipeRefreshLayout.setRefreshing(false);
+            }
+
+        });
+
     }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
         Rocket rocket = adapterRocket.getItem(position);
 
         if (rocket.flickr_images == null){
