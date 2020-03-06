@@ -138,44 +138,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_about.xml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/launches_view.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+            <state relative-caret-position="323">
+              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/assets/fr/about.html">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_rockets.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="289">
+              <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/assets/fr/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/isima/tp_squelette_spacex/activity/AboutActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
     </leaf>
@@ -223,7 +203,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/fr/isima/tp_squelette_spacex/adapter/LaunchAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_rocket.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/launches_view.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_launch.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_rockets.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_launches.xml" />
@@ -231,6 +210,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/fr/isima/tp_squelette_spacex/activity/LaunchesActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/assets/fr/about.html" />
         <option value="$PROJECT_DIR$/app/src/main/assets/fr/style.css" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/launches_view.xml" />
       </list>
     </option>
   </component>
@@ -286,8 +266,99 @@
               <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="TP_Squelette_Spacex" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\J-PC\Documents\GitHub\App-Android-ZZ2" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="fr" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="TP_Squelette_Spacex" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\J-PC\Documents\GitHub\App-Android-ZZ2" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="fr" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="isima" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="TP_Squelette_Spacex" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\J-PC\Documents\GitHub\App-Android-ZZ2" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="fr" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="isima" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="tp_squelette_spacex" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="TP_Squelette_Spacex" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\J-PC\Documents\GitHub\App-Android-ZZ2" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="fr" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="isima" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="tp_squelette_spacex" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="activity" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="TP_Squelette_Spacex" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\J-PC\Documents\GitHub\App-Android-ZZ2" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="fr" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="isima" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="tp_squelette_spacex" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="adapter" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="TP_Squelette_Spacex" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\J-PC\Documents\GitHub\App-Android-ZZ2" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="fr" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="isima" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="tp_squelette_spacex" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ws" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="TP_Squelette_Spacex" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\J-PC\Documents\GitHub\App-Android-ZZ2" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="res" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="TP_Squelette_Spacex" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\J-PC\Documents\GitHub\App-Android-ZZ2" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="res" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="layout" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="TP_Squelette_Spacex" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\J-PC\Documents\GitHub\App-Android-ZZ2" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="res" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="menu" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -450,7 +521,7 @@
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.32889125" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Preview" order="4" weight="0.2782516" />
+      <window_info anchor="right" id="Preview" order="4" visible="true" weight="0.2782516" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Assistant" order="6" weight="0.32995737" />
     </layout>
@@ -613,14 +684,6 @@
       </provider>
       <provider editor-type-id="android-manifest" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_nav.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/isima/tp_squelette_spacex/activity/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -651,14 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/launches_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_launch.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -682,14 +737,6 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_rocket.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/isima/tp_squelette_spacex/activity/RocketActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -699,14 +746,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_rockets.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_launches.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -773,14 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/rocket_image.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_about.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -811,10 +842,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/assets/fr/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_nav.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/rocket_image.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_rocket.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_rockets.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/launches_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
   </component>
   <component name="gradleExecuteTaskHistory">

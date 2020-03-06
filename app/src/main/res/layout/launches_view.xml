@@ -7,30 +7,30 @@
     <TextView
         android:id="@+id/mission_name"
         android:layout_width="match_parent"
-        android:layout_height="70px"
+        android:layout_height="35dp"
         android:textStyle="bold"
-        android:textSize="20dp"
-        android:layout_marginLeft="20px"
-        android:layout_marginTop="20px">
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
     </TextView>
 
     <TextView
         android:id="@+id/mission_rocket_name"
         android:layout_width="match_parent"
-        android:layout_height="50px"
-        android:textSize="16dp"
-        android:layout_marginLeft="20px"
-        android:layout_marginTop="10px">
+        android:layout_height="25dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp">
 
     </TextView>
 
     <TextView
         android:id="@+id/mission_date_launch"
         android:layout_width="match_parent"
-        android:layout_height="50px"
-        android:textSize="16dp"
-        android:layout_marginLeft="20px"
-        android:layout_marginBottom="15px">
+        android:layout_height="25dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp">
 
     </TextView>
 
